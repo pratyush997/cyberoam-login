@@ -384,8 +384,8 @@ namespace LoginApp
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: add About
-            MessageBox.Show("todo");
+            MessageBox.Show("Enchanced Cyberoam Login Client- 1.0\n\n\tpratyush997 | aman");
+            System.Diagnostics.Process.Start("https://github.com/pratyush997/cyberoam-login"); // Gotta make this bit subtle.
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
