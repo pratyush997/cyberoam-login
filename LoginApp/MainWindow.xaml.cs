@@ -184,7 +184,7 @@ namespace LoginApp
             {
                         //TODO: Any Better way to do it? 
                 if (String.IsNullOrEmpty(userId) && String.IsNullOrEmpty(password))
-                    MessageBox.Show("Enter Credentials");
+                    MessageBox.Show("Enter Credentials or No Profiles found.");
                 else if (String.IsNullOrEmpty(userId))
                     MessageBox.Show("Enter UserID");
                 else if (String.IsNullOrEmpty(password))

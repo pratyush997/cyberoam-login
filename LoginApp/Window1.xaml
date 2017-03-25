@@ -50,11 +50,10 @@
 
         <CheckBox x:Name="loginCheckBox" Grid.Row="3"
                   Grid.Column="1" Content="Auto Login (Buggy)"
-                  Click="loginCheckBox_Click"
                    HorizontalContentAlignment="Center" 
                   VerticalContentAlignment="Center"
                   HorizontalAlignment="Center"
-                  VerticalAlignment="Center"/>
+                  VerticalAlignment="Center" Checked="loginCheckBox_Checked" Unchecked="loginCheckBox_Unchecked"/>
 
     </Grid>
 </Window>

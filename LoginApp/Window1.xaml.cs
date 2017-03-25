@@ -29,18 +29,22 @@ namespace LoginApp
             }
         }
 
-        private void loginCheckBox_Click(object sender, RoutedEventArgs e)
-        {
-            if (loginCheckBox.IsChecked.Value)
-                Properties.Settings.Default.AutoLogin = true;
-            else
-                Properties.Settings.Default.AutoLogin = false;
-            Properties.Settings.Default.Save();
-        }
 
         private void hostButton_Click(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default.URL = hostBox.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void loginCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.AutoLogin = true;
+            Properties.Settings.Default.Save();
+        }
+
+        private void loginCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.AutoLogin = false;
             Properties.Settings.Default.Save();
         }
 
